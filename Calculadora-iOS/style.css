@@ -1,0 +1,118 @@
+/* Font Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.content {
+    width: 100%;
+    height: 100vh;
+    padding: 25px 15px;
+    background-color: #000;
+}
+
+.calc {
+    height: 100%;
+    /* border: 1px solid #fff; */
+}
+
+
+/* Screen */
+.calc__screen {
+    height: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    overflow: hidden;
+    /* background-color: red; */
+}
+
+.calc__output {
+    margin-right: 25px;
+    font-size: 60px;
+    font-weight: 300;
+    color: #fff;
+    /* background-color: yellow; */
+}
+
+
+/* Buttons */
+.calc__container-buttons {
+    height: 70%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    /* background-color: yellow; */
+}
+
+.calc__item-button {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* border: 1px solid #fff; */
+}
+
+.calc__item-button button {
+    width: 70px;
+    height: 70px;
+    font-size: 25px;
+    font-weight: 500;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.calc__item-button .num {
+    background-color: #303030;
+}
+
+.calc__item-button .num:active {
+    background-color: #181818;
+}
+
+.gray {
+    background-color: #9e9e9e;
+}
+
+.gray.btn-active {
+    background-color: #181818;
+}
+
+.gray-btn-ac:active {
+    background-color: #181818;
+}
+
+.orange {
+    background-color: #f59805;
+}
+
+.orange.btn-active {
+    color: #f59805;
+    background-color: #f2f2f2;
+}
+
+.orange-btn-calculate:active {
+    color: #f59805;
+    background-color: #f2f2f2;
+}
+
+.font-size-40 {
+    font-size: 40px !important;
+}
+
+.calc__item-button-column-2 {
+    grid-column: span 2;
+}
+
+.calc__item-button-column-2 button {
+    width: 150px;
+    height: 70px;
+    border-radius: 80px / 100%;
+}
