@@ -37,7 +37,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    /* background-color: blue; */
+    gap: 10px;
 }
 
 .title {
@@ -50,7 +50,6 @@
 }
 
 .slogan {
-    margin-top: 10px;
     color: #f2f2f2;
 }
 
@@ -61,7 +60,10 @@
     align-items: center;
     justify-content: center;
     gap: 15px;
-    /* background-color: green; */
+}
+
+.container-input.hide {
+    display: none;
 }
 
 .container-input > div {
@@ -95,44 +97,39 @@
 
 .button {
     width: 50%;
-    padding: 8px 0;
+    padding: 10px 0;
+    text-transform: uppercase;
     cursor: pointer;
     color: #00fe00;
     border: 1px solid #00fe00;
     background: transparent;
-    animation: sleep infinite;
+    animation: parpadeo 2s linear infinite;
+    transition: .7s ease;
 }
 
-.button:active {
+.button:hover {
     color: #000;
     background-color: #00fe00;
+    animation: none;
 }
 
-@keyframes sleep {
-    0% {
-        border-color: #000;
-        color: #000;
+@keyframes parpadeo  {
+    0%, 41%, 45%, 47%, 49.5%, 100%  { 
+        opacity: 1;
     }
 
-    50% {
-        border-color: #00fe00;
-        color: #00fe00;
-    }
-
-    100% {
-        border-color: #000;
-        color: #000;
+    42%, 44%, 46%,48%,  50%  { 
+        opacity: 0; 
     }
 }
 
 .container-data {
-    padding: 20px 0;
+    padding: 30px 0;
     grid-row: 2 / 4;
     display: none;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    /* background-color: palevioletred; */
 }
 
 .container-data.show {
@@ -158,7 +155,6 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    /* background-color: yellow; */
 }
 
 .contact-title {
@@ -180,4 +176,52 @@
 .img {
     width: 100%;
     height: 100%;
+}
+
+
+
+/* Responsive Design (Mobile) */
+@media screen and (max-width: 375px) {
+    .container {
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+    }
+
+    .main-content {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .title {
+        width: 300px;
+        height: 50px;
+    }
+
+    .container-input > div {
+        width: 60%;
+    }
+    
+    .button {
+        width: 60%;
+        font-size: 13px;
+    }
+
+    .container-data {
+        padding: 0;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .container-data li {
+        font-size: 13px;
+    }
+
+    .contact {
+        padding: 0;
+    }
+    
+    .container-img {
+        display: none;
+    }
 }
