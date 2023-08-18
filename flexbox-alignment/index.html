@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bee1edc4ba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Alineacion en FlexBox</title>
+</head>
+<body>
+    <h1 class="title">Alineación en <span>FLEXBOX</span></h1>
+    <div class="content">
+        <div class="container sidebar">
+            <h2 class="container__title">Propiedades</h2>
+            <div class="sidebar__item">
+                <h3 class="sidebar__title">display</h3>
+                <button class="sidebar__button clicked" property="display">flex</button>
+            </div>
+            <div class="sidebar__item">
+                <h3 class="sidebar__title">flex-direction</h3>
+                <button class="sidebar__button clicked" property="flex-direction">row</button>
+                <button class="sidebar__button" property="flex-direction">column</button>
+            </div>
+            <div class="sidebar__item">
+                <h3 class="sidebar__title sidebar__btn">justify-content
+                    <span><i class="fa-solid fa-angle-right"></i></span>
+                </h3>
+                <div class="sidebar__collection">
+                    <button class="sidebar__button" property="justify-content">center</button>
+                    <button class="sidebar__button" property="justify-content">flex-end</button>
+                    <button class="sidebar__button" property="justify-content">flex-start</button>
+                    <button class="sidebar__button" property="justify-content">space-around</button>
+                    <button class="sidebar__button" property="justify-content">space-between</button>
+                    <button class="sidebar__button" property="justify-content">space-evenly</button>
+                </div>
+            </div>
+            <div class="sidebar__item">
+                <h3 class="sidebar__title sidebar__btn">align-items
+                    <span><i class="fa-solid fa-angle-right"></i></span>
+                </h3>
+                <div class="sidebar__collection">
+                    <button class="sidebar__button" property="align-items">center</button>
+                    <button class="sidebar__button" property="align-items">flex-end</button>
+                    <button class="sidebar__button" property="align-items">flex-start</button>
+                </div>
+            </div>
+        </div>
+        <div class="container content-main">
+            <h2 class="container__title"> Flex container</h2>
+            <div class="flex-container" id="flex-container" style="display: flex;">
+                <div class="flex-item">Flex item 1</div>
+                <div class="flex-item">Flex item 2</div>
+                <div class="flex-item">Flex item 3</div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

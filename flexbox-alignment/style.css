@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --blue: #48e;
+    --black: #212121;
+    --white: #fefefe;
+}
+
+.title {
+    margin-top: 20px;
+    font-size: 3em;
+    text-align: center;
+    color: var(--black);
+}
+
+.title span {
+    border-bottom: 2px solid var(--blue);
+}
+
+.content {
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    gap: 50px;
+}
+
+.container {
+    border: 5px solid #48e;
+    box-shadow: 3px 3px 20px 5px rgba(0, 0, 0, .5);
+    background-color: var(--black);
+}
+
+.container__title {
+    width: 80%;
+    height: 70px;
+    margin: 0 auto 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    border-bottom: 2px solid var(--white);
+}
+
+.sidebar {
+    width: 20%;
+    padding: 0 30px;
+}
+
+.sidebar__item {
+    margin-bottom: 20px;
+}
+
+.sidebar__title {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.sidebar__btn {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar__btn span {
+    transform: rotate(90deg);
+}
+
+.sidebar__btn.open span {
+    transform: rotate(-90deg);
+}
+
+.sidebar__collection {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.sidebar__button {
+    width: 100%;
+    padding: 5px 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+.sidebar__button:hover {
+    cursor: pointer;
+}
+
+.sidebar__button.clicked {
+    color: var(--blue);
+    background-color: var(--white);
+}
+
+.content-main {
+    width: 80%;
+    height: 80vh;
+}
+
+.flex-container {
+    width: 100%;
+    height: calc(100% - 100px);
+}
+
+.flex-item {
+    width: 150px;
+    height: 150px;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--white);
+    border: 2px solid var(--white);
+    background-color: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
