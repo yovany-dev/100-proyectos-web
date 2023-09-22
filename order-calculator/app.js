@@ -1,0 +1,1 @@
+console.log(2**2 * (4+1) + Math.sqrt(81) * (3+2));

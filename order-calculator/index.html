@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de jerarquía de operaciones</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <div class="title"><img src="title.png" alt="title-page"></div>
+
+        <div class="section actions">
+            <div class="button">
+                <div>
+                    <sub><var>x</var></sub><sup>2</sup>
+                </div>
+            </div>
+            <div class="button">
+                <div>
+                    <sub><var>x</var></sub><sup>□</sup>
+                </div>
+            </div>
+            <div class="button">√</div>
+            <div class="button button-circle"></div>
+            <div class="button">÷</div>
+            <div class="button">(□)</div>
+        </div>
+
+        <div class="section input-container">
+            <input type="text" placeholder="Ingrese un problema">
+            <button class="calculate-button">Calcular</button>
+        </div>
+        
+        <div class="section">
+            <h2 class="title-result">Resultado</h2>
+            <p class="result">65</p>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
