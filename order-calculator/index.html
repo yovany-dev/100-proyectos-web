@@ -13,31 +13,33 @@
         </div>
 
         <div class="item item-flex">
-            <div class="section actions">
-                <div class="button">
-                    <div>
-                        <sub><var>x</var></sub><sup>2</sup>
+            <div class="section actions" id="actions">
+                <div class="button pow2">
+                    <div class="pow2">
+                        <sub class="pow2"><var class="pow2">x</var></sub>
+                        <sup class="pow2">2</sup>
                     </div>
                 </div>
-                <div class="button">
-                    <div>
-                        <sub><var>x</var></sub><sup>□</sup>
+                <div class="button pow">
+                    <div class="pow">
+                        <sub class="pow"><var class="pow">x</var></sub>
+                        <sup class="pow">□</sup>
                     </div>
                 </div>
-                <div class="button">√</div>
-                <div class="button button-circle"></div>
-                <div class="button">÷</div>
-                <div class="button">(□)</div>
+                <div class="button sqrt">√</div>
+                <div class="button button-circle multiplication"></div>
+                <div class="button division">÷</div>
+                <div class="button parenthesis">(□)</div>
             </div>
 
             <div class="section input-container">
-                <input type="text" placeholder="Ingrese un problema">
-                <button class="calculate-button">Calcular</button>
+                <input id="input" type="text" placeholder="Ingrese un problema">
+                <button class="calculate-button" id="calculate">Calcular</button>
             </div>
             
             <div class="section">
                 <h2 class="title-result">Resultado</h2>
-                <p class="result">65</p>
+                <p class="result" id="result">0</p>
             </div>
         </div>
     </div>
