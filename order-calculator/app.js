@@ -1,29 +1,37 @@
 const actions = document.getElementById('actions');
 const input = document.getElementById('input');
 
+function writeInput(str, p=1) {
+    let value = input.value;
+    let position = input.selectionStart;
+
+    value = value.slice(0, position) + str + value.slice(position);
+    input.value = value;
+
+    input.selectionStart = position + p;
+    input.selectionEnd = position + p;
+}
+
 actions.addEventListener('click', e => {
     const element = e.target;
 
     if (element.matches('.pow2')) {
-        input.value += '^2';
+        writeInput('^2', 2);
     }
     if (element.matches('.pow')) {
-        input.value += '^';
+        writeInput('^');
     }
     if (element.matches('.sqrt')) {
-        input.value += '√';
+        writeInput('√');
     }
     if (element.matches('.multiplication')) {
-        input.value += 'x';
+        writeInput('x');
     }
     if (element.matches('.division')) {
-        input.value += '÷';
+        writeInput('÷');
     }
     if (element.matches('.parenthesis')) {
-        input.value += '()';
-        let position = input.selectionStart - 1;
-        input.selectionStart = position;
-        input.selectionEnd = position;
+        writeInput('()');
     }
     input.focus();
 });
