@@ -2,7 +2,7 @@
 Proyectos web **"simples"** creados con `HTML, CSS y JavaScript`. `Progreso: 5/100 🐣`.
 
 ## Proyectos
-1. [**Lucia Store**]() tienda de ropa inspirado en el diseño de [kenneth cole](https://gt.kennethcolelatino.com/). [**Vista en vivo 🚀**]()
+1. [**Lucia Store**](https://github.com/Yovani-Morales/100-proyectos-web/tree/main/lucia-store) tienda de ropa inspirado en el diseño de [kenneth cole](https://gt.kennethcolelatino.com/). [**Vista en vivo 🚀**](https://yovani-morales.github.io/100-proyectos-web/lucia-store/)
 
 1. [**Black Phone**](https://github.com/Yovani-Morales/100-proyectos-web/tree/main/Black-Phone) herramienta de OSINT. [**Vista en vivo 🚀**](https://yovani-morales.github.io/100-proyectos-web/Black-Phone/)
 

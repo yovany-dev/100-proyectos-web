@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bee1edc4ba.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Lucia</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">Lucía</h1>
+        <nav class="nav">
+            <a class="nav__link" href="#">Inicio</a>
+            <a class="nav__link" href="#man">Hombre</a>
+            <a class="nav__link" href="#woman">Mujer</a>
+            <a class="nav__link" href="#shoes">Zapatos</a>
+            <a class="nav__link" href="#clock">Joyas y Relojes</a>
+        </nav>
+        <div class="icons">
+            <i class="fa-regular fa-user icon user"></i>
+            <i class="fa-solid fa-magnifying-glass icon"></i>
+            <i class="fa-solid fa-cart-shopping icon"><b class="value">0</b></i>
+            <i class="fa-regular fa-heart icon heart"><b class="value">0</b></i>
+            <i class="fa-solid fa-bars icon bars"></i>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <ul class="slider">
+                <li><img class="slider__img" src="imgs/img-1.jpg" alt="img-1"></li>
+                <li><img class="slider__img" src="imgs/img-2.jpg" alt="img-2"></li>
+                <li><img class="slider__img" src="imgs/img-3.jpg" alt="img-3"></li>
+                <li><img class="slider__img" src="imgs/img-4.jpg" alt="img-4"></li>
+            </ul>
+            <div class="container-buttons">
+                <div class="hero__btn"><i class="fa-solid fa-angle-left"></i></div>
+                <div class="hero__btn"><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+        </section>
+
+        <section class="clothes">
+            <div class="clothes__sidebar">
+                <div class="collection-sidebar">
+                    <button class="collection-sidebar__btn">
+                        MARCA
+                        <span><i class="fa-solid fa-angle-right"></i></span>
+                    </button>
+                    <ul class="collection-sidebar__ul">
+                        <li class="collection-sidebar__li"><span>Nike</span></li>
+                        <li class="collection-sidebar__li"><span>Sara</span></li>
+                        <li class="collection-sidebar__li"><span>Shein</span></li>
+                        <li class="collection-sidebar__li collection-sidebar__li--padding-0"><span>Kenneth Cole</span></li>
+                    </ul>
+                </div>
+                <span class="line"></span>
+                <div class="collection-sidebar">
+                    <button class="collection-sidebar__btn">
+                        TALLA
+                        <span><i class="fa-solid fa-angle-right"></i></span>
+                    </button>
+                    <ul class="collection-sidebar__ul">
+                        <li class="collection-sidebar__li"><span>Unitalla</span></li>
+                        <li class="collection-sidebar__li"><span>XXS</span></li>
+                        <li class="collection-sidebar__li"><span>XS</span></li>
+                        <li class="collection-sidebar__li"><span>S</span></li>
+                        <li class="collection-sidebar__li"><span>M</span></li>
+                        <li class="collection-sidebar__li collection-sidebar__li--padding-0"><span>L</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="clothes__sidebar-responsive">
+                <div class="btn-filter">
+                    <i class="fa-solid fa-filter"></i>
+                    <p>Filtrar</p>
+                </div>
+                <select class="select-responsive">
+                    <option selected>Más vendidos</option>
+                    <option>Ordenar</option>
+                    <option>Características</option>
+                    <option>Alfabéticamente, A-Z</option>
+                    <option>Alfabéticamente, Z-A</option>
+                    <option>Precio, menor a mayor</option>
+                    <option>Precio, mayor a menor</option>
+                    <option>Fecha: antiguo(a) a reciente</option>
+                    <option>Fecha: reciente a antiguo(a)</option>
+                </select>
+            </div>
+
+            <article class="clothes__man section"  id="man">
+                <h2 class="clothes__title">Hombre</h2>
+
+                <div class="clothes__filter">
+                    <div class="clothes__filter-item-count">143 artículos </div>
+                    <div class="clothes__filter-item-sort">
+                        <select class="select">
+                            <option selected>Más vendidos</option>
+                            <option>Ordenar</option>
+                            <option>Características</option>
+                            <option>Alfabéticamente, A-Z</option>
+                            <option>Alfabéticamente, Z-A</option>
+                            <option>Precio, menor a mayor</option>
+                            <option>Precio, mayor a menor</option>
+                            <option>Fecha: antiguo(a) a reciente</option>
+                            <option>Fecha: reciente a antiguo(a)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="grid-product">
+                    <div class="grid-product__content">
+                        <div class="grid-product__tag">-39%</div>
+                        <img class="grid-product__img" src="//gt.kennethcolelatino.com/cdn/shop/products/MK2008KX_21WHITE_211_512x.jpg?v=1680627198" alt="product">
+                        <div class="grid-product__opinions">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            21 Opiniones
+                        </div>
+                        <div class="grid-product__image-swatches image-swatches">
+                            <div class="image-swatches__item">
+                                <img src="//gt.kennethcolelatino.com/cdn/shop/products/MK2008KX_21GREY_211_50x.jpg?v=1680627198" alt="image-swatches">
+                            </div>
+                            <div class="image-swatches__item">
+                                <img src="//gt.kennethcolelatino.com/cdn/shop/products/MK2008KX_21NAVY_211_50x.jpg?v=1680627198" alt="image-swatches">
+                            </div>
+                            <div class="image-swatches__item">
+                                <img src="//gt.kennethcolelatino.com/cdn/shop/products/MK2008KX_21WHITE_211_50x.jpg?v=1680627198" alt="image-swatches">
+                            </div>
+                        </div>
+                        <div class="grid-product__meta">
+                            <p class="grid-product__description">The Life-Lite Mix Sneaker Zapatilla Para Hombre</p>
+                            <div>
+                                <p>Q739.00</p>
+                                <p>Q517.50</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-product__content">
+                        <div class="grid-product__tag">-39%</div>
+                        <img class="grid-product__img" src="//cdn.shopify.com/s/files/1/0599/1897/5152/products/KCOI20CAM-07-05_NAVY_512x.jpg?v=1666045291" alt="product">
+                        <div class="grid-product__opinions">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            2 Opiniones
+                        </div>
+                        <div class="grid-product__image-swatches image-swatches">
+                            <div class="image-swatches__item">
+                                <img src="//cdn.shopify.com/s/files/1/0599/1897/5152/products/KCOI20CAM-07-05_NAVY_50x.jpg?v=1666045291" alt="image-swatches">
+                            </div>
+                            <div class="image-swatches__item">
+                                <img src="//cdn.shopify.com/s/files/1/0599/1897/5152/products/KCOI20CAM-07-05_DUSTY_BLUE_50x.jpg?v=1666045291" alt="image-swatches">
+                            </div>
+                        </div>
+                        <div class="grid-product__meta">
+                            <p class="grid-product__description">T-Shirt Básico Para Hombre</p>
+                            <div>
+                                <p>Q329.00</p>
+                                <p>Q197.50</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-product__content">
+                        <div class="grid-product__tag">-39%</div>
+                        <img class="grid-product__img" src="//cdn.shopify.com/s/files/1/0599/1897/5152/products/KCOI20CAM-09-02_white_512x.jpg?v=1666045691" alt="product">
+                        <div class="grid-product__opinions">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            3 Opiniones
+                        </div>
+                        <div class="grid-product__image-swatches image-swatches"></div>
+                        <div class="grid-product__meta">
+                            <p class="grid-product__description">T-Shirt Básico Para Hombre</p>
+                            <div>
+                                <p>Q329.00</p>
+                                <p>Q197.50</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-product__content">
+                        <div class="grid-product__tag">-39%</div>
+                        <img class="grid-product__img" src="//cdn.shopify.com/s/files/1/0599/1897/5152/products/KCPV22CAM-14-03NAVY-1_512x.jpg?v=1668016991" alt="product">
+                        <div class="grid-product__image-swatches image-swatches"></div>
+                        <div class="grid-product__meta">
+                            <p class="grid-product__description">T-Shirt Para Hombre</p>
+                            <div>
+                                <p>Q309.00</p>
+                                <p>Q185.49</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-product__content">
+                        <div class="grid-product__tag">-39%</div>
+                        <img class="grid-product__img" src="//cdn.shopify.com/s/files/1/0599/1897/5152/products/KCOI18VAQ07WASHED-1_360x.jpg?v=1669309302 360w, //cdn.shopify.com/s/files/1/0599/1897/5152/products/KCOI18VAQ07WASHED-1_540x.jpg?v=1669309302 540w, //cdn.shopify.com/s/files/1/0599/1897/5152/products/KCOI18VAQ07WASHED-1_720x.jpg?v=1669309302 720w, //cdn.shopify.com/s/files/1/0599/1897/5152/products/KCOI18VAQ07WASHED-1_900x.jpg?v=1669309302 900w, //cdn.shopify.com/s/files/1/0599/1897/5152/products/KCOI18VAQ07WASHED-1_1080x.jpg?v=1669309302 1080w" alt="product">
+                        <div class="grid-product__opinions">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            1 Opinión
+                        </div>
+                        <div class="grid-product__image-swatches image-swatches">
+                            <div class="image-swatches__item">
+                                <img src="https://cdn.shopify.com/s/files/1/0599/1897/5152/products/KCOI18VAQ07_BLUE_-1_50x.jpg?v=1669309243" alt="image-swatches">
+                            </div>
+                            <div class="image-swatches__item">
+                                <img src="https://cdn.shopify.com/s/files/1/0599/1897/5152/products/KCOI18VAQ07WASHED-1_50x.jpg?v=1669309302" alt="image-swatches">
+                            </div>
+                        </div>
+                        <div class="grid-product__meta">
+                            <p class="grid-product__description">JEANS PARA HOMBRE</p>
+                            <div>
+                                <p>Q998.00</p>
+                                <p>Q599.10</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-product__content">
+                        <div class="grid-product__tag">-39%</div>
+                        <img class="grid-product__img" src="//cdn.shopify.com/s/files/1/0599/1897/5152/products/KCPV22CAM-06-01-1_360x.jpg?v=1668029505 360w, //cdn.shopify.com/s/files/1/0599/1897/5152/products/KCPV22CAM-06-01-1_540x.jpg?v=1668029505 540w, //cdn.shopify.com/s/files/1/0599/1897/5152/products/KCPV22CAM-06-01-1_720x.jpg?v=1668029505 720w, //cdn.shopify.com/s/files/1/0599/1897/5152/products/KCPV22CAM-06-01-1_900x.jpg?v=1668029505 900w, //cdn.shopify.com/s/files/1/0599/1897/5152/products/KCPV22CAM-06-01-1_1080x.jpg?v=1668029505 1080w" alt="product">
+                        <div class="grid-product__image-swatches image-swatches"></div>
+                        <div class="grid-product__meta">
+                            <p class="grid-product__description">T-Shirt Para Hombre</p>
+                            <div>
+                                <p>Q539.00</p>
+                                <p>Q323.56</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-product__content">
+                        <div class="grid-product__tag">-39%</div>
+                        <img class="grid-product__img" src="//cdn.shopify.com/s/files/1/0599/1897/5152/products/17NY053_WHITE_1_512x.jpg?v=1665177772" alt="product">
+                        <div class="grid-product__image-swatches image-swatches">
+                            <div class="image-swatches__item">
+                                <img src="https://cdn.shopify.com/s/files/1/0599/1897/5152/products/17NY053001_BLACK_1_50x.jpg?v=1665177793" alt="image-swatches">
+                            </div>
+                            <div class="image-swatches__item">
+                                <img src="https://cdn.shopify.com/s/files/1/0599/1897/5152/products/17NY053420_BLUEBAY_1_50x.jpg?v=1665177929" alt="image-swatches">
+                            </div>
+                            <div class="image-swatches__item">
+                                <img src="https://cdn.shopify.com/s/files/1/0599/1897/5152/products/17NY053460_CRYSTALBLUE_1_50x.jpg?v=1665177780" alt="image-swatches">
+                            </div>
+                            <div class="image-swatches__item">
+                                <img src="https://cdn.shopify.com/s/files/1/0599/1897/5152/products/17NY053_WHITE_1_50x.jpg?v=1665177772" alt="image-swatches">
+                            </div>
+                        </div>
+                        <div class="grid-product__meta">
+                            <p class="grid-product__description">Camisa De Vestir Para Hombre</p>
+                            <div>
+                                <p>Q759.00</p>
+                                <p>Q467.63</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-product__content">
+                        <div class="grid-product__tag">-39%</div>
+                        <img class="grid-product__img" src="//cdn.shopify.com/s/files/1/0599/1897/5152/products/KCOI20PAN-05-05_NAVY_-1_360x.jpg?v=1666219043 360w, //cdn.shopify.com/s/files/1/0599/1897/5152/products/KCOI20PAN-05-05_NAVY_-1_540x.jpg?v=1666219043 540w, //cdn.shopify.com/s/files/1/0599/1897/5152/products/KCOI20PAN-05-05_NAVY_-1_720x.jpg?v=1666219043 720w, //cdn.shopify.com/s/files/1/0599/1897/5152/products/KCOI20PAN-05-05_NAVY_-1_900x.jpg?v=1666219043 900w, //cdn.shopify.com/s/files/1/0599/1897/5152/products/KCOI20PAN-05-05_NAVY_-1_1080x.jpg?v=1666219043 1080w" alt="product">
+                        <div class="grid-product__opinions">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            8 Opiniones
+                        </div>
+                        <div class="grid-product__image-swatches image-swatches"></div>
+                        <div class="grid-product__meta">
+                            <p class="grid-product__description">Pantalón Chino Para Hombre</p>
+                            <div>
+                                <p>Q998.00</p>
+                                <p>Q599.10</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-product__button-more">
+                        <button>Ver Más</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="clothes__woman section" id="woman">
+                <h2 class="clothes__title">Mujer</h2>
+
+                <div class="clothes__filter">
+                    <div class="filter__item-count">110 artículos </div>
+                    <div class="filter__item-sort">
+                        <select class="select">
+                            <option selected>Más vendidos</option>
+                            <option>Ordenar</option>
+                            <option>Características</option>
+                            <option>Alfabéticamente, A-Z</option>
+                            <option>Alfabéticamente, Z-A</option>
+                            <option>Precio, menor a mayor</option>
+                            <option>Precio, mayor a menor</option>
+                            <option>Fecha: antiguo(a) a reciente</option>
+                            <option>Fecha: reciente a antiguo(a)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid-product">
+                    <div class="grid-product__content">
+                        <div class="grid-product__tag">-39%</div>
+                        <img class="grid-product__img" src="//cdn.shopify.com/s/files/1/0599/1897/5152/products/RWS4275FB_21BEIGE_211_360x.webp?v=1673365976 360w, //cdn.shopify.com/s/files/1/0599/1897/5152/products/RWS4275FB_21BEIGE_211_540x.webp?v=1673365976 540w, //cdn.shopify.com/s/files/1/0599/1897/5152/products/RWS4275FB_21BEIGE_211_720x.webp?v=1673365976 720w, //cdn.shopify.com/s/files/1/0599/1897/5152/products/RWS4275FB_21BEIGE_211_900x.webp?v=1673365976 900w, //cdn.shopify.com/s/files/1/0599/1897/5152/products/RWS4275FB_21BEIGE_211_1080x.webp?v=1673365976 1080w" alt="product">
+                        <div class="grid-product__opinions">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            6 Opiniones
+                        </div>
+                        <div class="grid-product__image-swatches image-swatches">
+                            <div class="image-swatches__item">
+                                <img src="//cdn.shopify.com/s/files/1/0599/1897/5152/products/RWS4275FB_21BEIGE_211_50x.webp?v=1673365976" alt="image-swatches">
+                            </div>
+                            <div class="image-swatches__item">
+                                <img src="//cdn.shopify.com/s/files/1/0599/1897/5152/products/RWS4275FB_21BLACK_211_50x.webp?v=1673365976" alt="image-swatches">
+                            </div>
+                        </div>
+                        <div class="grid-product__meta">
+                            <p class="grid-product__description">Eliana Wedge</p>
+                            <div>
+                                <p>Q689.00</p>
+                                <p>Q413.69</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-product__content">
+                        <div class="grid-product__tag">-39%</div>
+                        <img class="grid-product__img" src="//cdn.shopify.com/s/files/1/0599/1897/5152/products/K6054FH-BLACK-1_360x.jpg?v=1659632263 360w, //cdn.shopify.com/s/files/1/0599/1897/5152/products/K6054FH-BLACK-1_540x.jpg?v=1659632263 540w, //cdn.shopify.com/s/files/1/0599/1897/5152/products/K6054FH-BLACK-1_720x.jpg?v=1659632263 720w, //cdn.shopify.com/s/files/1/0599/1897/5152/products/K6054FH-BLACK-1_900x.jpg?v=1659632263 900w, //cdn.shopify.com/s/files/1/0599/1897/5152/products/K6054FH-BLACK-1_1080x.jpg?v=1659632263 1080w" alt="product">
+                        <div class="grid-product__opinions">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            5 Opiniones
+                        </div>
+                        <div class="grid-product__image-swatches image-swatches">
+                            <div class="image-swatches__item">
+                                <img src="//cdn.shopify.com/s/files/1/0599/1897/5152/products/K6054FH-BLACK-1_50x.jpg?v=1659632263" alt="image-swatches">
+                            </div>
+                            <div class="image-swatches__item">
+                                <img src="//cdn.shopify.com/s/files/1/0599/1897/5152/products/K6054FH-GRAY-1_50x.jpg?v=1659632263" alt="image-swatches">
+                            </div>
+                            <div class="image-swatches__item">
+                                <img src="//cdn.shopify.com/s/files/1/0599/1897/5152/products/K6054FH-NAVY-1_50x.jpg?v=1659632263" alt="image-swatches">
+                            </div>
+                            <div class="image-swatches__item">
+                                <img src="//cdn.shopify.com/s/files/1/0599/1897/5152/products/K6054FH-RED-1_50x.jpg?v=1659632263" alt="image-swatches">
+                            </div>
+                        </div>
+                        <div class="grid-product__meta">
+                            <p class="grid-product__description">WALLET ZIP AROUND PARA MUJER</p>
+                            <div>
+                                <p>Q379.00</p>
+                                <p>Q227.51</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-product__content">
+                        <div class="grid-product__tag">-39%</div>
+                        <img class="grid-product__img" src="//cdn.shopify.com/s/files/1/0599/1897/5152/products/KLS2021681-01_360x.jpg?v=1662503964 360w, //cdn.shopify.com/s/files/1/0599/1897/5152/products/KLS2021681-01_540x.jpg?v=1662503964 540w, //cdn.shopify.com/s/files/1/0599/1897/5152/products/KLS2021681-01_720x.jpg?v=1662503964 720w, //cdn.shopify.com/s/files/1/0599/1897/5152/products/KLS2021681-01_900x.jpg?v=1662503964 900w, //cdn.shopify.com/s/files/1/0599/1897/5152/products/KLS2021681-01_1080x.jpg?v=1662503964 1080w" alt="product">
+                        <div class="grid-product__opinions">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            7 Opiniones
+                        </div>
+                        <div class="grid-product__image-swatches image-swatches">
+                            <div class="image-swatches__item">
+                                <img src="//cdn.shopify.com/s/files/1/0599/1897/5152/products/KLS2021681-01_50x.jpg?v=1662503964" alt="image-swatches">
+                            </div>
+                            <div class="image-swatches__item">
+                                <img src="//cdn.shopify.com/s/files/1/0599/1897/5152/products/KLS2022CN410-01_50x.jpg?v=1662503964" alt="image-swatches">
+                            </div>
+                        </div>
+                        <div class="grid-product__meta">
+                            <p class="grid-product__description">The Run Slip On Zapatilla Para Mujer</p>
+                            <div>
+                                <p>Q489.00</p>
+                                <p>Q293.55</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-product__content">
+                        <div class="grid-product__tag">-39%</div>
+                        <img class="grid-product__img" src="//cdn.shopify.com/s/files/1/0599/1897/5152/products/RWS4220AM_PURPLEMULTI2_360x.jpg?v=1652474723 360w, //cdn.shopify.com/s/files/1/0599/1897/5152/products/RWS4220AM_PURPLEMULTI2_540x.jpg?v=1652474723 540w, //cdn.shopify.com/s/files/1/0599/1897/5152/products/RWS4220AM_PURPLEMULTI2_720x.jpg?v=1652474723 720w, //cdn.shopify.com/s/files/1/0599/1897/5152/products/RWS4220AM_PURPLEMULTI2_900x.jpg?v=1652474723 900w, //cdn.shopify.com/s/files/1/0599/1897/5152/products/RWS4220AM_PURPLEMULTI2_1080x.jpg?v=1652474723 1080w" alt="product">
+                        <div class="grid-product__opinions">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            27 Opiniones
+                        </div>
+                        <div class="grid-product__image-swatches image-swatches">
+                            <div class="image-swatches__item">
+                                <img src="//cdn.shopify.com/s/files/1/0599/1897/5152/products/RWS4220AM_PURPLEMULTI2_50x.jpg?v=1652474723" alt="image-swatches">
+                            </div>
+                            <div class="image-swatches__item">
+                                <img src="//cdn.shopify.com/s/files/1/0599/1897/5152/products/RWS4220AM_TURQUOISE2_50x.jpg?v=1652474723" alt="image-swatches">
+                            </div>
+                        </div>
+                        <div class="grid-product__meta">
+                            <p class="grid-product__description">Tyde Dye Flip Flop Para Mujer</p>
+                            <div>
+                                <p>Q119.00</p>
+                                <p>Q71.74</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-product__content">
+                        <div class="grid-product__tag">-39%</div>
+                        <img class="grid-product__img" src="//cdn.shopify.com/s/files/1/0599/1897/5152/products/K7052FH_21BLACK_211_360x.jpg?v=1680626886 360w, //cdn.shopify.com/s/files/1/0599/1897/5152/products/K7052FH_21BLACK_211_540x.jpg?v=1680626886 540w, //cdn.shopify.com/s/files/1/0599/1897/5152/products/K7052FH_21BLACK_211_720x.jpg?v=1680626886 720w, //cdn.shopify.com/s/files/1/0599/1897/5152/products/K7052FH_21BLACK_211_900x.jpg?v=1680626886 900w, //cdn.shopify.com/s/files/1/0599/1897/5152/products/K7052FH_21BLACK_211_1080x.jpg?v=1680626886 1080w" alt="product">
+                        <div class="grid-product__image-swatches image-swatches">
+                            <div class="image-swatches__item">
+                                <img src="//cdn.shopify.com/s/files/1/0599/1897/5152/products/K7052FH_21BLACK_211_50x.jpg?v=1680626886" alt="image-swatches">
+                            </div>
+                            <div class="image-swatches__item">
+                                <img src="//cdn.shopify.com/s/files/1/0599/1897/5152/products/K7052FH_21GREY_211_50x.jpg?v=1680626886" alt="image-swatches">
+                            </div>
+                            <div class="image-swatches__item">
+                                <img src="//cdn.shopify.com/s/files/1/0599/1897/5152/products/K7052FH_21OLIVE_211_50x.jpg?v=1680626886" alt="image-swatches">
+                            </div>
+                        </div>
+                        <div class="grid-product__meta">
+                            <p class="grid-product__description">Roku Mochila Bolso Para Mujer</p>
+                            <div>
+                                <p>Q779.00</p>
+                                <p>Q447.63</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-product__content">
+                        <div class="grid-product__tag">-39%</div>
+                        <img class="grid-product__img" src="//cdn.shopify.com/s/files/1/0599/1897/5152/products/RWS4265AM_21NAVY_211_360x.webp?v=1673365945 360w, //cdn.shopify.com/s/files/1/0599/1897/5152/products/RWS4265AM_21NAVY_211_540x.webp?v=1673365945 540w, //cdn.shopify.com/s/files/1/0599/1897/5152/products/RWS4265AM_21NAVY_211_720x.webp?v=1673365945 720w, //cdn.shopify.com/s/files/1/0599/1897/5152/products/RWS4265AM_21NAVY_211_900x.webp?v=1673365945 900w, //cdn.shopify.com/s/files/1/0599/1897/5152/products/RWS4265AM_21NAVY_211_1080x.webp?v=1673365945 1080w" alt="product">
+                        <div class="grid-product__image-swatches image-swatches"></div>
+                        <div class="grid-product__meta">
+                            <p class="grid-product__description">Time 4 Fun Wedge</p>
+                            <div>
+                                <p>Q689.00</p>
+                                <p>Q413.61</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-product__content">
+                        <div class="grid-product__tag">-39%</div>
+                        <img class="grid-product__img" src="//cdn.shopify.com/s/files/1/0599/1897/5152/products/K7042FH_21CAM_MULTI_211_360x.jpg?v=1680626797 360w, //cdn.shopify.com/s/files/1/0599/1897/5152/products/K7042FH_21CAM_MULTI_211_540x.jpg?v=1680626797 540w, //cdn.shopify.com/s/files/1/0599/1897/5152/products/K7042FH_21CAM_MULTI_211_720x.jpg?v=1680626797 720w, //cdn.shopify.com/s/files/1/0599/1897/5152/products/K7042FH_21CAM_MULTI_211_900x.jpg?v=1680626797 900w, //cdn.shopify.com/s/files/1/0599/1897/5152/products/K7042FH_21CAM_MULTI_211_1080x.jpg?v=1680626797 1080w" alt="product">
+                        <div class="grid-product__opinions">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            16 Opiniones
+                        </div>
+                        <div class="grid-product__image-swatches image-swatches">
+                            <div class="image-swatches__item">
+                                <img src="https://cdn.shopify.com/s/files/1/0599/1897/5152/products/K7042FH_21CAM_MULTI_211_50x.jpg?v=1680626797" alt="image-swatches">
+                            </div>
+                            <div class="image-swatches__item">
+                                <img src="https://cdn.shopify.com/s/files/1/0599/1897/5152/products/K7042FH_21NAVY-PLUM_211_50x.jpg?v=1680626797" alt="image-swatches">
+                            </div>
+                        </div>
+                        <div class="grid-product__meta">
+                            <p class="grid-product__description">Terry Mochila Para Mujer</p>
+                            <div>
+                                <p>Q769.00</p>
+                                <p>Q461.63</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-product__content">
+                        <div class="grid-product__tag">-39%</div>
+                        <img class="grid-product__img" src="//cdn.shopify.com/s/files/1/0599/1897/5152/products/RW06494TFtofee_360x.jpg?v=1670343816 360w, //cdn.shopify.com/s/files/1/0599/1897/5152/products/RW06494TFtofee_540x.jpg?v=1670343816 540w, //cdn.shopify.com/s/files/1/0599/1897/5152/products/RW06494TFtofee_720x.jpg?v=1670343816 720w, //cdn.shopify.com/s/files/1/0599/1897/5152/products/RW06494TFtofee_900x.jpg?v=1670343816 900w, //cdn.shopify.com/s/files/1/0599/1897/5152/products/RW06494TFtofee_1080x.jpg?v=1670343816 1080w" alt="product">
+                        <div class="grid-product__opinions">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            8 Opiniones
+                        </div>
+                        <div class="grid-product__image-swatches image-swatches"></div>
+                        <div class="grid-product__meta">
+                            <p class="grid-product__description">Great Gal Sandalia Para Mujer</p>
+                            <div>
+                                <p>Q639.00</p>
+                                <p>Q383.59</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-product__button-more">
+                        <button>Ver Más</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="shoes section" id="shoes">
+            <div class="shoes__texts">
+                <h3>Modern Design</h3>
+                <p>Combina</p>
+                <p>sneakers</p>
+                <p>con estilo</p>
+            </div>
+            <img src="https://dunker.qodeinteractive.com/wp-content/uploads/2023/01/Landing-img-2-scaled.jpg" alt="shoes">
+        </section>
+
+        <section class="clock section" id="clock">
+            <h2 class="clock__title">Joyas y Relojes</h2>
+            <div class="clock-grid">
+                <div class="clock-grid__item">
+                    <img src="https://plazavea.vteximg.com.br/arquivos/ids/12470364-512-512/image-66c7ba7545f747ba8380b35d5f382756.jpg" alt="clock">
+                    <div class="clock-grid__container-btn">
+                        <button>Relojes para hombre</button>
+                    </div>
+                </div>
+                <div class="clock-grid__item"><img src="https://media.revistagq.com/photos/6299c93bc340964ceb9e1be3/16:9/w_2560%2Cc_limit/1386515920" alt="clock"></div>
+                <div class="clock-grid__item">
+                    <img src="https://idealaweb.s3.amazonaws.com/sitio349/Archivos/Contenido/jt9tfq6n7lje5pw94vi5.jpg" alt="jewel">
+                    <div class="clock-grid__container-btn">
+                        <button>Anillos de oro</button>
+                    </div>
+                </div>
+                <div class="clock-grid__item">
+                    <img src="https://vozdelasempresas.org/wp-content/uploads/2022/02/industria-joyera.jpg" alt="jewel">
+                    <div class="clock-grid__container-btn">
+                        <button>Collares de plata</button>
+                    </div>
+                </div>
+                <div class="clock-grid__item">
+                    <img src="https://i.pinimg.com/originals/3f/35/e8/3f35e8e45f11ef5082dfa68d60b30980.jpg" alt="clock">
+                    <div class="clock-grid__container-btn">
+                        <button>Relojes para mujer</button>
+                    </div>
+                </div>
+                <div class="clock-grid__item"><img src="https://images.hola.com/imagenes/estar-bien/20180920129783/la-joyeria-tambien-se-hace-sostenible-cs/0-599-848/joyeriasostenible-t.jpg?tx=w_680" alt="jewel"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__grid">
+            <div class="footer__politics">
+                <h2 class="footer__title">Políticas</h2>
+                <i class="fa-solid fa-angle-right footer__icon-angle"></i>
+                <a class="footer__link" href="#">Políticas de Cambios y Devoluciones</a>
+                <a class="footer__link" href="#">Políticas de Cancelación y Reembolso</a>
+                <a class="footer__link" href="#">Políticas de Entrega o Servicio</a>
+                <a class="footer__link" href="#">Políticas de Cookies</a>
+                <a class="footer__link" href="#">Términos del servicio</a>
+                <a class="footer__link" href="#">Política de reembolso</a>
+            </div>
+            <div class="footer__about">
+                <h2 class="footer__title">Sobre Lucía</h2>
+                <i class="fa-solid fa-angle-right footer__icon-angle"></i>
+                <a class="footer__link" href="#">Preguntas Frecuentes</a>
+                <a class="footer__link" href="#">Mide tu talla</a>
+                <a class="footer__link" href="#">Contáctanos</a>
+                <a class="footer__link" href="#">Visítanos</a>
+            </div>
+            <div class="footer__newsletter">
+                <h2 class="footer__title">NEWSLETTER</h2>
+                <i class="fa-solid fa-angle-right footer__icon-angle"></i>
+                <p class="footer__subtitle footer__link-none">Suscríbete y sé el primero en conocer nuestras promociones y nuevos lanzamientos.</p>
+                <div class="footer__container-input footer__link-none">
+                    <input class="footer__input" type="text" placeholder="Suscríbete a nuestra lista de correo">
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+                <div class="footer__link-none footer__container-icons">
+                    <i class="footer__icon fa-brands fa-instagram"></i>
+                    <i class="footer__icon fa-brands fa-facebook-f"></i>
+                    <i class="footer__icon fa-brands fa-tiktok"></i>
+                </div>
+            </div>
+            <div class="footer__copy">© 2023 Lucía Guatemala </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
