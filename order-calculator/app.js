@@ -61,6 +61,9 @@ function format(string) {
         if (str === '√') {
             string.splice(i, 1, ' √ ');
         }
+        if (str === '(') {
+            string.splice(i, 1, ' *( ');
+        }
     }
     return string.join('');
 }
